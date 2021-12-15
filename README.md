@@ -4,6 +4,14 @@
 
 Object tracking implemented with YOLOv4, DeepSort, and TensorFlow. YOLOv4 is a state of the art algorithm that uses deep convolutional neural networks to perform object detections. We can take the output of YOLOv4 feed these object detections into Deep SORT (Simple Online and Realtime Tracking with a Deep Association Metric) in order to create a highly accurate object tracker.
 
+## JackalNet
+
+Weights files are too large to include in this repository
+
+Copy and paste the `checkpoints` folder into the root of this repository. 
+
+(Are these files still needed?) Paste `yolov4.weights` file into the `data` folder and `yolov4-obj-_best.weights` into the `weights` folder.
+
 ## Demo of Object Tracker on Persons
 <p align="center"><img src="data/helpers/demo.gif"\></p>
 

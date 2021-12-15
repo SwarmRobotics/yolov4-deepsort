@@ -1,3 +1,8 @@
+# Weights files (too large to store in git)
+checkpoints/
+checkpoints.tar.xz
+*.weights
+
 # MacOS file information
 .DS_Store
 ._*
