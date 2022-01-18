@@ -1,10 +1,10 @@
 # JackalNet
 
-This is a fork of the (yolov4-deepsort library)[https://github.com/theAIGuysCode/yolov4-deepsort] modified to detect Jackal UGVs.
+This is a fork of the [yolov4-deepsort library](https://github.com/theAIGuysCode/yolov4-deepsort) modified to detect Jackal UGVs.
 
 ## Weights
 
-Before running object detection you must download the saved models from the following link: https://unsw-my.sharepoint.com/:f:/r/personal/z8788057_ad_unsw_edu_au/Documents/DST%20Heterogenous%20Testbed%20Project/Jackal%20Optical%20Imaging/Jackal%20Weights?csf=1&web=1&e=Hyh9Z5
+Before running object detection you must download the saved models from [here](https://unsw-my.sharepoint.com/:f:/r/personal/z8788057_ad_unsw_edu_au/Documents/DST%20Heterogenous%20Testbed%20Project/Jackal%20Optical%20Imaging/Jackal%20Weights?csf=1&web=1&e=Hyh9Z5).
 
 Create a 'checkpoints' folder at the root level of this repository and place the 'jackalnet-416' and 'jackalnet-416-best' folders inside
 
