@@ -398,12 +398,12 @@ if __name__ == '__main__':
         rospy.init_node("jackalnet")
 
         raw_sub = message_filters.Subscriber('camera/full/image_raw', ImageMsg)
+        left_sub = message_filters.Subscriber('camera/left/image_rect', ImageMsg)
         front_sub = message_filters.Subscriber('camera/front/image_rect', ImageMsg)
         right_sub = message_filters.Subscriber('camera/right/image_rect', ImageMsg)
         back_sub = message_filters.Subscriber('camera/back/image_rect', ImageMsg)
-        left_sub = message_filters.Subscriber('camera/left/image_rect', ImageMsg)
 
-        ts = message_filters.TimeSynchronizer([raw_sub, front_sub, right_sub, back_sub, left_sub], 1)
+        ts = message_filters.TimeSynchronizer([raw_sub, left_sub, front_sub, right_sub, back_sub], 1)
         ts.registerCallback(callback)
         detection_publisher = rospy.Publisher('jackalnet_detections', JackalNetDetection, queue_size=10)
         if FLAGS.publish_image:
