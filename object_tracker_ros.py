@@ -396,6 +396,8 @@ def callback(*args):
 if __name__ == '__main__':
     try:
         rospy.init_node("jackalnet")
+        
+        FLAGS.publish_image = rospy.get_param("~publish_image", False)
 
         raw_sub = message_filters.Subscriber('camera/full/image_raw', ImageMsg)
         left_sub = message_filters.Subscriber('camera/left/image_rect', ImageMsg)
